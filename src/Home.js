@@ -11,6 +11,7 @@ const Home = () => {
         //Hooks helps us to make a reactive value; Therefore we use useState
         <div className="home">
            <BlogList blogs= {blogs} title = "All Blogs!"/>
+           <BlogList blogs= {blogs.filter((blog) => blog.author === 'mario')} title = "Mario's Blogs"/>
         </div>
       );
 }
