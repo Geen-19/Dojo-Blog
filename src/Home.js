@@ -5,8 +5,7 @@ const Home = () => {
     const [blogs, setBlogs]  = useState(null);
     const [isPending, setIsPending] = useState(true);
     useEffect(() => {
-        setTimeout(() => {
-            fetch('http://localhost:8000/blogs')
+        fetch('http://localhost:8000/blogs')
             .then(Res => {
                 return Res.json();
             })
@@ -14,7 +13,6 @@ const Home = () => {
                 setBlogs(data);
                 setIsPending(false);
             });
-        }, 1000);
     }, []);
         //[] this is used in useEffect so that this fun is executed only once when we rerender and not when a state is changed.
     return (
