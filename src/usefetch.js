@@ -6,7 +6,11 @@ const useFetch = (url) => {
     
     // custom hooks in react start with use
     useEffect(() => {
-        fetch(url)
+        const abortCont = new AbortController();
+
+
+
+        fetch(url, {signal: abortCont.signal})
             .then(Res => {
                 console.log(Res);
                 if(!Res.ok){
@@ -20,10 +24,17 @@ const useFetch = (url) => {
                 setIsPending(false);
             })
             .catch(err => {
-                setError(err.message);
-                setIsPending(false);
+                if (err.name == 'AbortError'){
+                    console.log('fetch aborted');
+                }
+                else {
+                    setError(err.message);
+                    setIsPending(false);
+                }
+                
             })
-    }, []);
+            return () => abortCont.abort();
+    }, [url]);
 
     return { data, isPending, error }
 }
