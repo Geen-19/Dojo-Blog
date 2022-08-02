@@ -17,12 +17,6 @@
       "body": "Hello Nice to meet you all fellas!!!!!!!!!!!!",
       "author": "mario",
       "id": 3
-    },
-    {
-      "title": "Docker For Beginners",
-      "body": "Docker is Great tool in devops and I am learning K8s rn and I would most probably ditch docker as K8S is the container orchestrator!!!!",
-      "author": "mario",
-      "id": 4
     }
   ]
 }

@@ -45,8 +45,8 @@ const Create = () => {
             <label >Blog Author</label>
             <select value={author}
             onChange = {(e) => setAuthor(e.target.value)}>
-               <option value="mario">mario</option>
-               <option value="yoshi">yoshi</option>
+               <option value="Mario">mario</option>
+               <option value="Lungi">yoshi</option>
             </select>
            {!isPending && <button>Add blog</button>}
            {isPending && <button>Adding Blog...</button>}
