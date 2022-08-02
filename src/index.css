@@ -3,7 +3,7 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #333;
+  background-color:#594ce0;
 }
 .navbar{
   padding: 20px;
@@ -14,6 +14,9 @@
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
+  color: aliceblue;
+}
+.navbar h1:hover{
   color: #f1356d;
 }
 .navbar .links {
@@ -21,11 +24,12 @@
 }
 .navbar a {
   margin-left: 16px;
+  color: aliceblue;
   text-decoration: none;
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color:#f1356d;
 }
 .content {
   max-width: 600px;
@@ -35,15 +39,18 @@
 .blog-preview {
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid #ee1010;
 }
 .blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 5px #f1356d;
 }
 .blog-preview h2 {
-  font-size: 20px;
+  font-size: 25px;
   color: #f1356d;
- margin-bottom: 8px; 
+  margin-bottom: 8px; 
+}
+.blog-preview p{
+  color: aliceblue;
 }
 .blog-preview a{
   text-decoration: none ;
@@ -55,6 +62,10 @@
 }
 .blog-details div{
   margin: 20px 0;
+  color: aliceblue;
+}
+.blog-details p{
+  color: #ddd;
 }
 .create {
   max-width: 400px;
@@ -62,6 +73,7 @@
   text-align: center;
 }
 .create label {
+  color: aliceblue;
   text-align: left;
   display: block;
 }
@@ -69,6 +81,9 @@
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 30px;
+}
+.create value{
+  color: #ddd;
 }
 .create input, .create textarea, .create select {
   width: 100%;
@@ -93,4 +108,14 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+.blog-list h2{
+  color: #f1356d;
+}
+.not-found p, .not-found a{
+  text-decoration: none;
+  color: #ddd;
+}
+.not-found h2{
+  color: #f1356d;
 }
